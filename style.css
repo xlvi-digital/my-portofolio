@@ -590,7 +590,7 @@ body.dark-mode .project-module:hover {
     overflow: hidden;
     border-radius: 16px;
     background: #000;
-    aspect-ratio: 16/10;
+    /* aspect-ratio: 16/10; */
 }
 
 .mockup-img {
