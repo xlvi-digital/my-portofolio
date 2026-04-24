@@ -604,7 +604,7 @@ body.dark-mode .project-module:hover {
 .floating-img {
     position: absolute;
     bottom: -20px;
-    right: -10px;
+    right: -0px;
     width: 30%;
     height: auto;
     z-index: 3;
@@ -728,7 +728,8 @@ body.dark-mode .project-module:hover {
     box-shadow: var(--shadow-md);
 }
 
-.tech-item:hover i, .tech-item:hover .tech-svg {
+.tech-item:hover i,
+.tech-item:hover .tech-svg {
     color: var(--primary);
     fill: var(--primary) !important;
 }
