@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Project - Reyhan Tri Ramadan</title>
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .detail-page {
+            padding-top: 120px;
+            background: var(--bg-color);
+        }
+        .case-study {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 8% 80px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .case-header {
+            margin-bottom: 50px;
+        }
+        .case-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .case-meta {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .meta-item h4 {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .meta-item p {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+        .case-visuals {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+        .visual-main, .visual-sub {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+        .visual-main img, .visual-sub img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .case-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        .case-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        .workflow-box {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+        }
+        .workflow-step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .step-num {
+            width: 35px;
+            height: 35px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        @media (max-width: 768px) {
+            .case-visuals {
+                grid-template-columns: 1fr;
+            }
+            .case-header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body class="dark-mode">
+
+    <header class="header">
+        <a href="index.html" class="logo">Reyhan.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects" class="active">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="header-right">
+            <i class='bx bx-moon' id="darkMode-icon"></i>
+        </div>
+    </header>
+
+    <div class="detail-page">
+        <section class="case-study">
+            <a href="index.html#projects" class="back-btn"><i class='bx bx-left-arrow-alt'></i> Kembali ke Portfolio</a>
+            
+            <div id="project-content">
+                <!-- Content will be injected by script.js based on URL param -->
+                <div class="case-header">
+                    <h1 id="case-title">Loading Project...</h1>
+                    <div class="case-meta">
+                        <div class="meta-item">
+                            <h4>Role</h4>
+                            <p>Fullstack Developer</p>
+                        </div>
+                        <div class="meta-item">
+                            <h4>Tech Stack</h4>
+                            <p id="case-tech">Laravel, MySQL, Bootstrap</p>
+                        </div>
+                        <div class="meta-item">
+                            <h4>Year</h4>
+                            <p>2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-visuals">
+                    <div class="visual-main">
+                        <img id="img-desktop" src="https://via.placeholder.com/800x500" alt="Desktop View">
+                    </div>
+                    <div class="visual-sub">
+                        <img id="img-mobile" src="https://via.placeholder.com/400x700" alt="Mobile View">
+                    </div>
+                </div>
+
+                <div class="case-content">
+                    <div class="case-section">
+                        <h2 class="section-title">The Problem</h2>
+                        <p id="case-problem">Mengambil data secara manual dari lapangan seringkali menyebabkan human error dan keterlambatan laporan...</p>
+                    </div>
+
+                    <div class="case-section">
+                        <h2 class="section-title">The Solution</h2>
+                        <p id="case-solution">Membangun platform dashboard terintegrasi yang memungkinkan input data real-time dengan validasi otomatis...</p>
+                    </div>
+
+                    <div class="case-section">
+                        <h2 class="section-title">System Workflow</h2>
+                        <div class="workflow-box" id="case-workflow">
+                            <div class="workflow-step">
+                                <span class="step-num">1</span>
+                                <p>Input data dari perangkat mobile di lapangan.</p>
+                            </div>
+                            <div class="workflow-step">
+                                <span class="step-num">2</span>
+                                <p>Data divalidasi oleh sistem dan disimpan ke database cloud.</p>
+                            </div>
+                            <div class="workflow-step">
+                                <span class="step-num">3</span>
+                                <p>Admin menerima notifikasi dan dapat menyetujui laporan secara instan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>© 2026 Reyhan Tri Ramadan — Membangun solusi digital dari masalah nyata.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple client-side routing for demo purposes
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+
+        const projectData = {
+            'lembur': {
+                title: 'Sistem Manajemen Lembur',
+                tech: 'Laravel, MySQL, Bootstrap, JavaScript',
+                problem: 'Proses pengajuan lembur yang masih menggunakan kertas seringkali hilang, sulit direkap, dan rawan kesalahan hitung yang merugikan baik karyawan maupun perusahaan.',
+                solution: 'Sebuah sistem berbasis web yang mendigitalisasi seluruh alur lembur. Karyawan mengajukan lewat handphone, atasan menyetujui via dashboard, dan HR mendapatkan rekap otomatis tanpa perlu input ulang.',
+                workflow: [
+                    'Karyawan mengunggah bukti lembur melalui portal mobile.',
+                    'Sistem menghitung estimasi biaya berdasarkan durasi secara otomatis.',
+                    'Supervisor menerima notifikasi email/WA untuk persetujuan.',
+                    'Laporan bulanan di-generate dalam format Excel/PDF untuk penggajian.'
+                ]
+            },
+            'vape': {
+                title: 'Website Katalog Vape',
+                tech: 'JavaScript, Google Sheets API, HTML, CSS',
+                problem: 'Pemilik toko merasa kesulitan memperbarui stok dan harga di website setiap hari karena harus mengubah kode HTML secara manual, yang memakan waktu dan berisiko merusak tampilan.',
+                solution: 'Integrasi Website dengan Google Sheets sebagai Database. Pemilik hanya perlu mengubah angka di tabel Google Sheets, dan website akan terupdate secara otomatis dalam hitungan detik.',
+                workflow: [
+                    'Data produk dikelola di spreadsheet Google Sheets yang familiar.',
+                    'Website memanggil data tersebut menggunakan API JavaScript.',
+                    'Filter kategori dan pencarian bekerja secara client-side untuk kecepatan maksimal.',
+                    'Tombol beli terhubung langsung ke WhatsApp dengan pesan template otomatis.'
+                ]
+            },
+            'undangan': {
+                title: 'Undangan Digital Interaktif',
+                tech: 'HTML, CSS, JavaScript',
+                problem: 'Undangan fisik mahal dan sulit didistribusikan ke luar kota dengan cepat. Selain itu, sulit bagi mempelai untuk mengetahui siapa saja yang akan hadir secara pasti.',
+                solution: 'Efisiensi biaya dan RSVP real-time. Undangan digital yang bisa dipersonalisasi namanya, dilengkapi musik, galeri, dan fitur konfirmasi kehadiran yang masuk ke dashboard pengantin.',
+                workflow: [
+                    'Tamu membuka link personal yang mencantumkan nama mereka.',
+                    'Tamu dapat melihat lokasi via peta interaktif dan mengisi buku tamu.',
+                    'Data kehadiran terkumpul di sistem untuk manajemen meja/porsi makanan.',
+                    'Setelah acara, ucapan dari tamu tersimpan sebagai kenang-kenangan digital.'
+                ]
+            }
+        };
+
+        if (projectId && projectData[projectId]) {
+            const data = projectData[projectId];
+            document.getElementById('case-title').innerText = data.title;
+            document.getElementById('case-tech').innerText = data.tech;
+            document.getElementById('case-problem').innerText = data.problem;
+            document.getElementById('case-solution').innerText = data.solution;
+            
+            let workflowHtml = '';
+            data.workflow.forEach((step, index) => {
+                workflowHtml += `
+                    <div class="workflow-step">
+                        <span class="step-num">${index + 1}</span>
+                        <p>${step}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('case-workflow').innerHTML = workflowHtml;
+            
+            // Set placeholders for images for now
+            // In real app, these would come from the data object
+            document.getElementById('img-desktop').src = `images/project/${projectId === 'lembur' ? '6b' : projectId === 'vape' ? '1b' : '7b'}.png`;
+            document.getElementById('img-mobile').src = `images/project/${projectId === 'lembur' ? '6a' : projectId === 'vape' ? '1a' : '7a'}.png`;
+        }
+    </script>
+</body>
+</html>
