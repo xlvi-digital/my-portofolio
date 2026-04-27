@@ -151,7 +151,7 @@
                         </div>
                         <div class="meta-item">
                             <h4>Year</h4>
-                            <p>2023</p>
+                            <p>2025</p>
                         </div>
                     </div>
                 </div>
@@ -261,6 +261,18 @@
                     'Dashboard menampilkan sisa material dan capaian target secara real-time.',
                     'Laporan opname otomatis tersedia untuk audit bulanan tanpa rekap manual.'
                 ]
+            },
+            'aurora': {
+                title: 'Aurora Outdoor Equipment Rental System',
+                tech: 'Alpine.js, HTML5, CSS3, JavaScript',
+                problem: 'Proses pemesanan manual tanpa katalog yang jelas menyebabkan pelanggan harus bertanya satu per satu mengenai produk, yang menghambat kecepatan transaksi bisnis.',
+                solution: 'Platform katalog digital interaktif menggunakan Alpine.js yang ringan namun dinamis, memungkinkan pelanggan melakukan self-service booking yang langsung terintegrasi dengan WhatsApp.',
+                workflow: [
+                    'Pelanggan melihat katalog produk interaktif secara real-time.',
+                    'Pelanggan memilih alat yang ingin disewa dan memasukkannya ke daftar booking.',
+                    'Sistem men-generate format pesanan otomatis secara terstruktur.',
+                    'Format pesanan dikirim langsung ke WhatsApp admin untuk finalisasi transaksi.'
+                ]
             }
         };
 
@@ -284,8 +296,8 @@
             
             // Set placeholders for images for now
             // In real app, these would come from the data object
-            document.getElementById('img-desktop').src = `assets/img/project/${projectId === 'production' ? '6b' : projectId === 'vape' ? '1b' : '7b'}.png`;
-            document.getElementById('img-mobile').src = `assets/img/project/${projectId === 'production' ? '6a' : projectId === 'vape' ? '1a' : '7a'}.png`;
+            document.getElementById('img-desktop').src = projectId === 'aurora' ? 'assets/img/project/3b.png' : `assets/img/project/${projectId === 'production' ? '6b' : projectId === 'vape' ? '1b' : '7b'}.png`;
+            document.getElementById('img-mobile').src = projectId === 'aurora' ? 'assets/img/project/3a.png' : `assets/img/project/${projectId === 'production' ? '6a' : projectId === 'vape' ? '1a' : '7a'}.png`;
         }
     </script>
 </body>
