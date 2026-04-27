@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* === CSS VARIABLES === */
+:root {
+    --primary: #7c3aed;
+    --primary-light: #a78bfa;
+    --primary-glow: rgba(124, 58, 237, 0.3);
+    --secondary: #6366f1;
+    
+    /* Default (Light Mode) */
+    --bg-dark: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-header: rgba(248, 250, 252, 0.85);
+    --bg-glass: rgba(255, 255, 255, 0.8);
+    --text-white: #020617;
+    --text-muted: #334155;
+    --text-dim: #64748b;
+    --text-gradient: linear-gradient(135deg, #020617 0%, #334155 100%);
+    --border-light: rgba(0, 0, 0, 0.1);
+    --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+    --shadow-glow: 0 0 20px rgba(124, 58, 237, 0.1);
+    
+    --transition-smooth: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-fam: 'Poppins', sans-serif;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+    --bg-dark: #020617;
+    --bg-card: #0f172a;
+    --bg-header: rgba(2, 6, 23, 0.85);
+    --bg-glass: rgba(15, 23, 42, 0.7);
+    --text-white: #f8fafc;
+    --text-muted: #94a3b8;
+    --text-dim: #64748b;
+    --text-gradient: linear-gradient(135deg, #f8fafc 0%, #94a3b8 100%);
+    --border-light: rgba(148, 163, 184, 0.1);
+    --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 20px rgba(124, 58, 237, 0.15);
+}
+
+/* Reset body styles to use variables */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: var(--transition-smooth);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-fam);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-smooth);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+
+
+/* Typography Scale */
+h1 { font-size: 4.5rem; line-height: 1.1; font-weight: 800; }
+h2 { font-size: 3rem; line-height: 1.2; font-weight: 700; }
+h3 { font-size: 1.5rem; line-height: 1.4; font-weight: 600; }
+p { font-size: 1.125rem; color: var(--text-muted); }
+
+.heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.heading span {
+    background: linear-gradient(to right, var(--primary-light), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle-small {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-light);
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.floating-anim {
+    animation: float 8s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0% { background-position: -200%; }
+    100% { background-position: 200%; }
+}
+
+/* Utilities */
+.glass-effect {
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-light);
+}
+
+.gradient-text {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

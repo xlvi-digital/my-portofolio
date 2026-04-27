@@ -1,0 +1,103 @@
+/* === TABLET (max-width: 1024px) === */
+@media screen and (max-width: 1024px) {
+    html { font-size: 15px; }
+    
+    section { padding: 100px 5%; }
+    
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 140px;
+    }
+    
+    .home-content p { margin: 0 auto 40px; }
+    
+    .img-box { width: 100%; max-width: 400px; height: 500px; }
+    
+    .portfolio-container-modern { grid-template-columns: 1fr; }
+    
+    .contact-info-wrapper { grid-template-columns: 1fr; }
+}
+
+/* === MOBILE (max-width: 768px) === */
+@media screen and (max-width: 768px) {
+    html { font-size: 14px; }
+    
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.25rem; }
+    
+    .services-container { grid-template-columns: 1fr; }
+    
+    .stats-container { grid-template-columns: 1fr; }
+    
+    .timeline-item { gap: 20px; }
+    
+    .timeline-line { left: 10px; }
+    .timeline-dot { left: 0px; }
+    
+    .cta-box { padding: 40px 20px; border-radius: 24px; }
+    .cta-box h2 { font-size: 2rem; }
+    .cta-box p { font-size: 1rem; }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 24px 8%;
+        background: var(--bg-card);
+        border-top: 1px solid var(--border-light);
+        flex-direction: column;
+        gap: 20px;
+        transition: var(--transition-smooth);
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .navbar a {
+        font-size: 1.1rem;
+        display: block;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .about-img-wrapper {
+        margin: 0 auto;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content h2, .about-content p {
+        text-align: center !important;
+    }
+}
+
+/* === SMALL MOBILE (max-width: 480px) === */
+@media screen and (max-width: 480px) {
+    .btn { width: 100%; }
+    
+    .btn-group { flex-direction: column; }
+    
+    .about-img-wrapper img { max-width: 250px; }
+    
+    .tech-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Prevent Horizontal Scroll */
+* {
+    max-width: 100%;
+}

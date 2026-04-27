@@ -17,13 +17,16 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- CSS Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 
   <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
-<body class="dark-mode">
+<body>
 
   <!-- Header Section -->
   <header class="header">
@@ -50,70 +53,64 @@
   <!-- Hero Section -->
   <section class="home" id="home">
     <div class="home-content">
-      <p class="subtitle">Web Developer & Problem Solver</p>
-      <h1>Membangun Sistem Web untuk <span>Efisiensi Bisnis Nyata</span></h1>
-      <p>Mengubah proses manual yang lambat menjadi sistem digital yang cepat, akurat, dan terukur. Fokus pada solusi
-        yang memberikan dampak bisnis langsung.</p>
+      <p class="subtitle-small" style="text-align: left;">Available for Projects</p>
+      <h1>Membangun Sistem Web untuk <span>Efisiensi Bisnis</span></h1>
+      <p class="gradient-text">Mengubah proses manual yang lambat menjadi sistem digital yang cepat, akurat, dan terukur. Fokus pada solusi yang memberikan dampak bisnis langsung.</p>
 
       <div class="social-media">
-        <a href="#"><i class='bx bxl-linkedin'></i></a>
-        <a href="#"><i class='bx bxl-github'></i></a>
-        <a href="#"><i class='bx bxl-instagram'></i></a>
-        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://www.linkedin.com/in/reyhan-tri-ramadan-851b58348/" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/xlvi-digital" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+        <a href="https://www.instagram.com/masreyxlvi/" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+        <a href="https://wa.me/+6281313362467" target="_blank" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
       </div>
 
       <div class="btn-group">
-        <a href="#projects" class="btn btn-primary pulse-hover">Lihat Project</a>
-        <a href="#contact" class="btn btn-outline">Diskusi Proyek</a>
+        <a href="#projects" class="btn btn-primary">Lihat Project <i class='bx bx-right-arrow-alt'></i></a>
+        <a href="assets/docs/CV Reyhan Tri Ramadan.pdf" target="_blank" download class="btn btn-outline">Download CV</a>
       </div>
     </div>
 
-    <div class="home-image">
+    <!-- <div class="home-image">
       <div class="img-box floating-anim">
         <div class="glow-bg"></div>
         <div class="shape-bg"></div>
-        <img src="images/hero.png" alt="Reyhan Tri Ramadan"
+        <img src="assets/img/hero.png" alt="Reyhan Tri Ramadan"
           onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png'">
       </div>
-    </div>
+    </div> -->
   </section>
 
   <!-- About Section -->
   <section class="about" id="about">
     <div class="about-img-wrapper">
       <div class="triangle-bg"></div>
-      <img src="images/about.png" alt="Profile"
+      <img src="assets/img/about.png" alt="Profile"
         onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png'">
     </div>
 
     <div class="about-content">
-      <div class="project-header" style="text-align: left; margin-bottom: 20px;">
-        <p class="subtitle-small">ABOUT ME</p>
-        <h2 class="heading" style="text-align: left; margin-bottom: 10px;">Dari Lapangan ke <span>Baris Kode</span></h2>
-      </div>
-      <p>Berawal dari pengalaman sebagai <strong>Admin Lapangan</strong>, saya sering menghadapi frustrasi akibat
-        manajemen data manual yang lambat dan rawan kesalahan.</p>
-      <p>Kesadaran akan inefisiensi tersebut mendorong saya beralih ke dunia Web Development. Saya tidak hanya menulis
-        kode, tapi membangun solusi digital untuk mengotomatisasi proses bisnis dan meningkatkan produktivitas
-        operasional.</p>
+      <p class="subtitle-small" style="text-align: left;">ABOUT ME</p>
+      <h2 class="heading" style="text-align: left; margin-bottom: 24px;">Dari Lapangan ke <span>Baris Kode</span></h2>
+      <p>Berawal dari pengalaman sebagai <strong>Admin Lapangan</strong>, saya sering menghadapi frustrasi akibat manajemen data manual yang lambat dan rawan kesalahan.</p>
+      <p>Kesadaran akan inefisiensi tersebut mendorong saya beralih ke dunia Web Development. Saya membangun solusi digital untuk mengotomatisasi proses bisnis dan meningkatkan produktivitas operasional.</p>
 
       <div class="stats-container">
-        <div class="stat-box hover-lift">
+        <div class="stat-box">
           <h3>3+</h3>
           <p>Tahun Pengalaman</p>
         </div>
-        <div class="stat-box hover-lift">
+        <div class="stat-box">
           <h3>10+</h3>
           <p>Project Selesai</p>
         </div>
-        <div class="stat-box hover-lift">
+        <div class="stat-box">
           <h3>100%</h3>
           <p>Fokus Solusi</p>
         </div>
       </div>
 
-      <div class="btn-group" style="margin-top: 30px;">
-        <a href="#" class="btn btn-primary">Download CV</a>
+      <div class="btn-group" style="margin-top: 40px;">
+        <a href="#contact" class="btn btn-primary">Let's Talk</a>
       </div>
     </div>
   </section>
@@ -126,32 +123,28 @@
     </div>
 
     <div class="services-container">
-      <div class="service-box hover-lift-glow">
+      <div class="card-premium service-box">
         <div class="icon-wrapper"><i class='bx bx-code-alt'></i></div>
-        <h3>Web Application Development</h3>
-        <p>Membangun aplikasi web kustom berbasis Laravel yang robust, scalable, dan aman untuk kebutuhan bisnis
-          spesifik Anda.</p>
+        <h3>Web Application</h3>
+        <p>Membangun aplikasi web kustom berbasis Laravel yang robust, scalable, dan aman untuk kebutuhan bisnis spesifik Anda.</p>
       </div>
 
-      <div class="service-box hover-lift-glow">
+      <div class="card-premium service-box">
         <div class="icon-wrapper"><i class='bx bx-layout'></i></div>
-        <h3>Admin Dashboard System</h3>
-        <p>Visualisasi data dan manajemen sistem yang intuitif untuk membantu Anda mengambil keputusan bisnis lebih
-          cepat.</p>
+        <h3>Admin Dashboard</h3>
+        <p>Visualisasi data dan manajemen sistem yang intuitif untuk membantu Anda mengambil keputusan bisnis lebih cepat.</p>
       </div>
 
-      <div class="service-box hover-lift-glow">
+      <div class="card-premium service-box">
         <div class="icon-wrapper"><i class='bx bx-git-merge'></i></div>
-        <h3>Business Process Automation</h3>
-        <p>Mengotomatisasi tugas repetitif dan integrasi API untuk meminimalkan human-error dalam operasional harian.
-        </p>
+        <h3>Process Automation</h3>
+        <p>Mengotomatisasi tugas repetitif dan integrasi API untuk meminimalkan human-error dalam operasional harian.</p>
       </div>
 
-      <div class="service-box hover-lift-glow">
+      <div class="card-premium service-box">
         <div class="icon-wrapper"><i class='bx bx-desktop'></i></div>
         <h3>Custom Website</h3>
-        <p>Website landing page atau profile perusahaan dengan performa tinggi untuk meningkatkan kredibilitas brand
-          Anda.</p>
+        <p>Website landing page atau profile perusahaan dengan performa tinggi untuk meningkatkan kredibilitas brand Anda.</p>
       </div>
     </div>
   </section>
@@ -165,90 +158,61 @@
 
     <div class="portfolio-container-modern">
       <!-- Project 1 -->
-      <div class="project-module hover-lift-glow">
+      <div class="card-premium project-module">
         <div class="project-visuals">
-          <div class="mockup-wrapper">
-            <img src="images/project/6b.png" alt="LemburKu Dashboard" class="mockup-img">
-          </div>
-          <img src="images/project/6a.png" alt="Mobile App" class="floating-img">
+          <img src="assets/img/project/6b.png" alt="Production Tracking System" class="mockup-img">
         </div>
         <div class="project-details">
-          <div class="project-icon-box"><i class='bx bx-time'></i></div>
-          <h3>Sistem Manajemen Lembur</h3>
-          <div class="case-brief">
-            <p><strong>Problem:</strong> Pengajuan lembur manual sering berantakan, data hilang, dan sulit direkap oleh
-              HRD.</p>
-            <p><strong>Solution:</strong> Digitalisasi alur pengajuan dan approval lembur dengan rekap otomatis.</p>
-            <p><strong>Impact:</strong> Efisiensi rekap data naik 80% dan transparansi jam lembur bagi karyawan.</p>
-          </div>
           <div class="tech-chips">
             <span class="chip">Laravel</span>
             <span class="chip">MySQL</span>
-            <span class="chip">Bootstrap</span>
+            <span class="chip">Optimization</span>
           </div>
-          <div class="btn-group-sm" style="display: flex; gap: 10px; margin-top: 15px;">
-            <a href="project-detail.html?id=lembur" class="btn btn-outline btn-sm"
-              style="font-size: 0.8rem; padding: 6px 12px;">Detail Study</a>
-            <a href="#" class="btn btn-primary btn-sm" style="font-size: 0.8rem; padding: 6px 12px;">Live Demo</a>
+          <h3>Sistem Achievement & Opname Otomatis</h3>
+          <p style="margin-bottom: 24px;">Automasi pencatatan achievement produksi dan opname material untuk meningkatkan akurasi data serta efisiensi operasional.</p>
+          <div class="btn-group">
+            <a href="project-detail.html?id=production" class="btn btn-outline btn-sm">Case Study</a>
+            <a href="https://github.com/xlvi-digital/APT" target="_blank" class="btn btn-primary btn-sm">Github</a>
           </div>
         </div>
       </div>
 
       <!-- Project 2 -->
-      <div class="project-module hover-lift-glow">
+      <div class="card-premium project-module">
         <div class="project-visuals">
-          <div class="mockup-wrapper">
-            <img src="images/project/1b.png" alt="VapeStore" class="mockup-img">
-          </div>
-          <img src="images/project/1a.png" alt="Mobile Catalog" class="floating-img">
+          <img src="assets/img/project/1b.png" alt="Inventory Catalog System" class="mockup-img">
         </div>
         <div class="project-details">
-          <div class="project-icon-box"><i class='bx bx-shopping-bag'></i></div>
-          <h3>Website Katalog Vape</h3>
-          <div class="case-brief">
-            <p><strong>Problem:</strong> Kesulitan update stok harian karena harus edit kode website secara manual.</p>
-            <p><strong>Solution:</strong> Menghubungkan website dengan Google Sheets sebagai database inventory.</p>
-            <p><strong>Impact:</strong> Update stok kini hanya secepat mengubah angka di excel, hemat waktu 100%.</p>
-          </div>
           <div class="tech-chips">
             <span class="chip">JavaScript</span>
             <span class="chip">Sheets API</span>
-            <span class="chip">HTML/CSS</span>
+            <span class="chip">Integration</span>
           </div>
-          <div class="btn-group-sm" style="display: flex; gap: 10px; margin-top: 15px;">
-            <a href="project-detail.html?id=vape" class="btn btn-outline btn-sm"
-              style="font-size: 0.8rem; padding: 6px 12px;">Detail Study</a>
-            <a href="#" class="btn btn-primary btn-sm" style="font-size: 0.8rem; padding: 6px 12px;">GitHub</a>
+          <h3>Inventory & Catalog System</h3>
+          <p style="margin-bottom: 24px;">Integrasi sinkronisasi data real-time menggunakan Google Sheets API untuk manajemen inventaris yang efisien dan dinamis.</p>
+          <div class="btn-group">
+            <a href="project-detail.html?id=vape" class="btn btn-outline btn-sm">Case Study</a>
+            <a href="https://xlvi.my.id/jagoVape/" target="_blank" class="btn btn-primary btn-sm">Lihat Demo</a>
           </div>
         </div>
       </div>
 
       <!-- Project 3 -->
-      <div class="project-module hover-lift-glow">
+      <div class="card-premium project-module">
         <div class="project-visuals">
-          <div class="mockup-wrapper">
-            <img src="images/project/7b.png" alt="Digital Wedding" class="mockup-img">
-          </div>
-          <img src="images/project/7a.png" alt="RSVP Form" class="floating-img">
+          <img src="assets/img/project/7b.png" alt="Digital Invitation Platform" class="mockup-img">
         </div>
         <div class="project-details">
-          <div class="project-icon-box"><i class='bx bx-envelope'></i></div>
-          <h3>Undangan Digital</h3>
-          <div class="case-brief">
-            <p><strong>Problem:</strong> Undangan cetak mahal dan RSVP tamu tidak bisa diprediksi secara akurat.</p>
-            <p><strong>Solution:</strong> Undangan interaktif dengan fitur live RSVP tracking dan database kehadiran.
-            </p>
-            <p><strong>Impact:</strong> Pengantin bisa memantau jumlah tamu pasti dan estimasi porsi makanan.</p>
-          </div>
           <div class="tech-chips">
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
-            <span class="chip">JavaScript</span>
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">JS</span>
+            <span class="chip">Interaktif</span>
           </div>
-          <div class="btn-group-sm" style="display: flex; gap: 10px; margin-top: 15px;">
-            <a href="project-detail.html?id=undangan" class="btn btn-outline btn-sm"
-              style="font-size: 0.8rem; padding: 6px 12px;">Detail Study</a>
-            <a href="#" class="btn btn-primary btn-sm" style="font-size: 0.8rem; padding: 6px 12px;">Live Demo</a>
+          <h3>Digital Invitation Platform</h3>
+          <p style="margin-bottom: 24px;">Solusi undangan interaktif dengan fitur RSVP tracking dan manajemen tamu terintegrasi untuk efisiensi perencanaan acara.</p>
+          <div class="btn-group">
+            <a href="project-detail.html?id=undangan" class="btn btn-outline btn-sm">Case Study</a>
+            <a href="https://xlvi.my.id/tema-botanical-no-image/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
           </div>
         </div>
       </div>
@@ -262,31 +226,18 @@
       <h2 class="heading">Tools & <span>Teknologi</span></h2>
     </div>
 
-    <div class="tech-container">
-      <div class="tech-row">
-        <!-- Frontend -->
-        <div class="tech-item hover-lift"><i class='bx bxl-html5'></i><span>HTML</span></div>
-        <div class="tech-item hover-lift"><i class='bx bxl-css3'></i><span>CSS</span></div>
-        <div class="tech-item hover-lift"><i class='bx bxl-javascript'></i><span>JavaScript</span></div>
-
-        <!-- Backend -->
-        <div class="tech-item hover-lift"><i class='bx bxl-php'></i><span>PHP</span></div>
-        <div class="tech-item hover-lift">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="tech-svg">
-            <path
-              d="M22.023 10.428l-2.072-3.69h-2.915L14.965 10.428H3L7.142 3.25h2.914l-2.071 3.69h2.071l4.143-7.38h2.914l4.143 7.38h-2.07zM11.977 13.572l2.071 3.69h2.915L19.035 13.572H21L16.858 20.75h-2.914l2.071-3.69h-2.071l-4.143 7.38h-2.914l-4.143-7.38h2.07z" />
-          </svg>
-          <span>Laravel</span>
-        </div>
-
-        <!-- Database -->
-        <div class="tech-item hover-lift"><i class='bx bxs-data'></i><span>MySQL</span></div>
-
-        <!-- Tools -->
-        <div class="tech-item hover-lift"><i class='bx bxl-git'></i><span>Git</span></div>
-        <div class="tech-item hover-lift"><i class='bx bxl-github'></i><span>GitHub</span></div>
-        <div class="tech-item hover-lift"><i class='bx bxl-google'></i><span>Sheets API</span></div>
+    <div class="tech-row">
+      <div class="tech-item"><i class='bx bxl-html5'></i><span>HTML</span></div>
+      <div class="tech-item"><i class='bx bxl-css3'></i><span>CSS</span></div>
+      <div class="tech-item"><i class='bx bxl-javascript'></i><span>JavaScript</span></div>
+      <div class="tech-item"><i class='bx bxl-php'></i><span>PHP</span></div>
+      <div class="tech-item">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M22.023 10.428l-2.072-3.69h-2.915L14.965 10.428H3L7.142 3.25h2.914l-2.071 3.69h2.071l4.143-7.38h2.914l4.143 7.38h-2.07zM11.977 13.572l2.071 3.69h2.915L19.035 13.572H21L16.858 20.75h-2.914l2.071-3.69h-2.071l-4.143 7.38h-2.914l-4.143-7.38h2.07z" /></svg>
+        <span>Laravel</span>
       </div>
+      <div class="tech-item"><i class='bx bxs-data'></i><span>MySQL</span></div>
+      <div class="tech-item"><i class='bx bxl-git'></i><span>Git</span></div>
+      <div class="tech-item"><i class='bx bxl-google'></i><span>Sheets API</span></div>
     </div>
   </section>
 
@@ -301,38 +252,29 @@
       <div class="timeline-line"></div>
 
       <div class="timeline-item">
-        <div class="timeline-dot"><i class='bx bx-map'></i></div>
+        <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h4>Admin Lapangan</h4>
-          <span>Awal Mula</span>
-          <p>Mengelola data operasional secara manual dan menemukan inefisiensi.</p>
+          <p class="subtitle-small" style="text-align: left; margin-bottom: 8px;">Awal Mula</p>
+          <h3>Admin Lapangan</h3>
+          <p>Mengelola data operasional secara manual dan menemukan inefisiensi yang mendorong saya untuk belajar coding.</p>
         </div>
       </div>
 
       <div class="timeline-item">
-        <div class="timeline-dot"><i class='bx bx-book-reader'></i></div>
+        <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h4>Self-Taught Web Dev</h4>
-          <span>Fase Belajar</span>
-          <p>Mendalami pemrograman untuk membangun solusi otomatisasi masalah nyata.</p>
+          <p class="subtitle-small" style="text-align: left; margin-bottom: 8px;">Fase Belajar</p>
+          <h3>Self-Taught Developer</h3>
+          <p>Mendalami Laravel dan Modern JS untuk membangun solusi otomatisasi masalah nyata di lingkungan kerja.</p>
         </div>
       </div>
 
       <div class="timeline-item">
-        <div class="timeline-dot"><i class='bx bx-laptop'></i></div>
+        <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h4>Freelance Developer</h4>
-          <span>Implementasi</span>
-          <p>Membangun berbagai sistem manajemen dan katalog untuk klien nyata.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot active"><i class='bx bx-briefcase-alt-2'></i></div>
-        <div class="timeline-content">
-          <h4>Web Developer</h4>
-          <span>Profesional</span>
-          <p>Fokus membangun sistem web yang mempercepat efisiensi bisnis.</p>
+          <p class="subtitle-small" style="text-align: left; margin-bottom: 8px;">Profesional</p>
+          <h3>Web Developer</h3>
+          <p>Fokus membangun sistem web yang mempercepat efisiensi bisnis dan membantu transformasi digital UMKM.</p>
         </div>
       </div>
     </div>
@@ -340,13 +282,12 @@
 
   <!-- CTA Section -->
   <section class="cta-section">
-    <div class="cta-box hover-lift-glow">
-      <h2>Saya siap untuk kesempatan baru</h2>
-      <p>Tersedia untuk proyek freelance maupun posisi Full-time. Mari bangun sistem yang efisien bersama.</p>
+    <div class="cta-box glass-effect">
+      <h2>Siap mendigitalkan bisnis Anda?</h2>
+      <p>Mari diskusikan bagaimana sistem web dapat membantu operasional Anda menjadi lebih efisien.</p>
       <div class="btn-group" style="justify-content: center;">
-        <a href="#contact" class="btn btn-white pulse-hover">Let's Connect</a>
-        <a href="mailto:email@example.com" class="btn btn-outline" style="color: #fff; border-color: #fff;">Kirim
-          Email</a>
+        <a href="#contact" class="btn btn-primary">Mulai Konsultasi</a>
+        <a href="assets/docs/CV Reyhan Tri Ramadan.pdf" download class="btn btn-primary">Lihat Resume</a>
       </div>
     </div>
   </section>
@@ -359,20 +300,23 @@
     </div>
 
     <div class="contact-info-wrapper">
-      <div class="contact-card hover-lift">
-        <i class='bx bx-envelope'></i>
-        <h4>Email</h4>
+      <div class="contact-card">
+        <div class="icon-wrapper" style="margin: 0 auto 20px;"><i class='bx bx-envelope'></i></div>
+        <h3>Email</h3>
         <p>reyhanmasrey94@gmail.com</p>
+        <a href="mailto:reyhanmasrey94@gmail.com" target="_blank" class="subtitle-small" style="margin-top: 20px;">Kirim Email <i class='bx bx-right-top-arrow-circle'></i></a>
       </div>
-      <div class="contact-card hover-lift">
-        <i class='bx bxl-whatsapp'></i>
-        <h4>WhatsApp</h4>
+      <div class="contact-card">
+        <div class="icon-wrapper" style="margin: 0 auto 20px;"><i class='bx bxl-whatsapp'></i></div>
+        <h3>WhatsApp</h3>
         <p>+62 813-1336-2467</p>
+        <a href="https://wa.me/6281313362467" target="_blank" class="subtitle-small" style="margin-top: 20px;">Klik untuk Chat <i class='bx bx-right-top-arrow-circle'></i></a>
       </div>
-      <div class="contact-card hover-lift">
-        <i class='bx bxs-map'></i>
-        <h4>Lokasi</h4>
+      <div class="contact-card">
+        <div class="icon-wrapper" style="margin: 0 auto 20px;"><i class='bx bxs-map'></i></div>
+        <h3>Lokasi</h3>
         <p>Cianjur, Jawa Barat</p>
+        <p class="subtitle-small" style="margin-top: 20px;">Tersedia Remote</p>
       </div>
     </div>
   </section>
@@ -380,14 +324,14 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-text">
-      <p>© 2026 Reyhan Tri Ramadan — Membangun solusi digital dari masalah nyata.</p>
+      <p>© 2026 Reyhan Tri Ramadan — Crafted with precision for business efficiency.</p>
     </div>
     <div class="footer-iconTop">
-      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+      <a href="#home" class="btn btn-primary" style="padding: 12px; min-height: auto;"><i class='bx bx-up-arrow-alt'></i></a>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

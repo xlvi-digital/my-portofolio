@@ -6,7 +6,10 @@
     <title>Detail Project - Reyhan Tri Ramadan</title>
     <!-- BoxIcons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <style>
         .detail-page {
             padding-top: 120px;
@@ -114,7 +117,7 @@
         }
     </style>
 </head>
-<body class="dark-mode">
+<body>
 
     <header class="header">
         <a href="index.html" class="logo">Reyhan.</a>
@@ -204,7 +207,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
         // Simple client-side routing for demo purposes
         const urlParams = new URLSearchParams(window.location.search);
@@ -238,13 +241,25 @@
             'undangan': {
                 title: 'Undangan Digital Interaktif',
                 tech: 'HTML, CSS, JavaScript',
-                problem: 'Undangan fisik mahal dan sulit didistribusikan ke luar kota dengan cepat. Selain itu, sulit bagi mempelai untuk mengetahui siapa saja yang akan hadir secara pasti.',
-                solution: 'Efisiensi biaya dan RSVP real-time. Undangan digital yang bisa dipersonalisasi namanya, dilengkapi musik, galeri, dan fitur konfirmasi kehadiran yang masuk ke dashboard pengantin.',
+                problem: 'Biaya cetak undangan fisik yang tinggi serta sulitnya mendistribusikan informasi lokasi dan RSVP tamu secara efisien dalam waktu singkat.',
+                solution: 'Platform undangan digital personal dengan fitur RSVP real-time, integrasi peta lokasi, dan manajemen buku tamu digital untuk efisiensi perencanaan acara.',
                 workflow: [
-                    'Tamu membuka link personal yang mencantumkan nama mereka.',
-                    'Tamu dapat melihat lokasi via peta interaktif dan mengisi buku tamu.',
-                    'Data kehadiran terkumpul di sistem untuk manajemen meja/porsi makanan.',
-                    'Setelah acara, ucapan dari tamu tersimpan sebagai kenang-kenangan digital.'
+                    'Mempelai menginput detail acara dan daftar tamu.',
+                    'Tamu menerima link personal dengan sapaan khusus.',
+                    'Konfirmasi kehadiran (RSVP) masuk ke dashboard secara real-time.',
+                    'Manajemen porsi katering dan buku tamu menjadi lebih terukur.'
+                ]
+            },
+            'production': {
+                title: 'Integrated Production & Inventory System',
+                tech: 'Laravel, MySQL, JavaScript, Data Validation',
+                problem: 'Proses pencatatan achievement produksi dan opname material yang manual sering menyebabkan duplikasi data, human-error, dan lambatnya laporan rekapitulasi operasional.',
+                solution: 'Platform web terintegrasi untuk mendigitalisasi alur pencatatan lapangan secara instan, lengkap dengan validasi data otomatis dan dashboard pemantauan stok yang selalu sinkron.',
+                workflow: [
+                    'Operator menginput achievement produksi harian via portal web.',
+                    'Sistem melakukan validasi stok material secara otomatis terhadap input produksi.',
+                    'Dashboard menampilkan sisa material dan capaian target secara real-time.',
+                    'Laporan opname otomatis tersedia untuk audit bulanan tanpa rekap manual.'
                 ]
             }
         };
@@ -269,8 +284,8 @@
             
             // Set placeholders for images for now
             // In real app, these would come from the data object
-            document.getElementById('img-desktop').src = `images/project/${projectId === 'lembur' ? '6b' : projectId === 'vape' ? '1b' : '7b'}.png`;
-            document.getElementById('img-mobile').src = `images/project/${projectId === 'lembur' ? '6a' : projectId === 'vape' ? '1a' : '7a'}.png`;
+            document.getElementById('img-desktop').src = `assets/img/project/${projectId === 'production' ? '6b' : projectId === 'vape' ? '1b' : '7b'}.png`;
+            document.getElementById('img-mobile').src = `assets/img/project/${projectId === 'production' ? '6a' : projectId === 'vape' ? '1a' : '7a'}.png`;
         }
     </script>
 </body>

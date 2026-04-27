@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CV Reyhan</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    html, body {
+  background: #0f172a;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* PAGE CONTROL */
+.page {
+    page-break-after: always;
+}
+
+.page:last-child {
+    page-break-after: auto;
+}
+
+/* TYPOGRAPHY */
+h1 { font-size: 28px; margin-bottom: 5px; }
+h2 { font-size: 18px; color: #a78bfa; margin-top: 25px; }
+p { font-size: 13px; line-height: 1.5; color: #cbd5f5; }
+
+.header {
+    border-bottom: 1px solid #334155;
+    padding-bottom: 15px;
+}
+
+/* UI */
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 4px 4px 0 0;
+    background: #1e293b;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    break-inside: avoid;
+}
+
+.title {
+    font-weight: 600;
+}
+
+/* PRINT FIX */
+@media print {
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background: #0f172a !important;
+    color: #e2e8f0 !important;
+  }
+
+  .container {
+    padding: 30px !important;
+  }
+
+  .card {
+    background: #1e293b !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .badge {
+    background: #1e293b !important;
+  }
+
+  h2 {
+    color: #a78bfa !important;
+  }
+
+  p {
+    color: #cbd5f5 !important;
+  }
+
+  .header {
+    border-bottom: 1px solid #334155 !important;
+  }
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HALAMAN 1 -->
+<div class="container page">
+
+<div class="header">
+    <h1>Reyhan Tri Ramadan</h1>
+    <p>Web Developer | Membangun Sistem untuk Efisiensi Proses Bisnis</p>
+    <p>Email: reyhanmasrey94@gmail.com | Portfolio: xlvi.my.id/my-portofolio</p>
+</div>
+
+<h2>Tentang Saya</h2>
+<p>
+Saya adalah Web Developer dengan latar belakang sebagai Admin Lapangan yang terbiasa bekerja dengan proses operasional manual. 
+Pengalaman tersebut membuat saya memahami permasalahan seperti kesalahan input data, proses yang lambat, dan kurangnya efisiensi sistem. 
+
+Saat ini saya fokus mengembangkan aplikasi berbasis web untuk mengotomatisasi proses bisnis, meningkatkan akurasi data, dan membantu operasional menjadi lebih cepat serta terstruktur.
+</p>
+
+<h2>Keahlian</h2>
+<div>
+<span class="badge">HTML</span>
+<span class="badge">CSS</span>
+<span class="badge">JavaScript</span>
+<span class="badge">PHP</span>
+<span class="badge">Laravel</span>
+<span class="badge">MySQL</span>
+<span class="badge">Git</span>
+</div>
+
+<h2>Project Highlight</h2>
+
+<div class="card">
+<div class="title">Sistem Manajemen Lembur</div>
+<p>
+Mengembangkan sistem berbasis web untuk mengotomatisasi pencatatan dan proses approval lembur. 
+Sistem ini membantu mengurangi kesalahan input serta mempercepat proses administrasi dibandingkan metode manual.
+</p>
+</div>
+
+<div class="card">
+<div class="title">Website Katalog Produk</div>
+<p>
+Membangun website katalog produk dinamis yang terintegrasi dengan Google Sheets, 
+memungkinkan pembaruan data secara real-time tanpa perlu melakukan perubahan langsung pada website.
+</p>
+</div>
+
+</div>
+
+<!-- HALAMAN 2 -->
+<div class="container">
+
+<h2>Project Tambahan</h2>
+
+<div class="card">
+<div class="title">Website Undangan Digital</div>
+<p>
+Mengembangkan website undangan digital interaktif dengan fitur RSVP dan desain responsif, 
+memberikan pengalaman pengguna yang lebih praktis dan modern untuk berbagai kebutuhan acara.
+</p>
+</div>
+
+<h2>Pengalaman</h2>
+
+<div class="card">
+<div class="title">Freelance Web Developer</div>
+<p>2022 - Sekarang</p>
+<p>
+Mengembangkan berbagai aplikasi web untuk kebutuhan bisnis dan personal, mulai dari perencanaan hingga implementasi. 
+Berfokus pada pembuatan solusi digital yang membantu meningkatkan efisiensi dan mengurangi proses manual.
+</p>
+</div>
+
+<div class="card">
+<div class="title">Admin Lapangan - PT Tirta Fresindo Jaya</div>
+<p>2022 - 2026</p>
+<p>
+Mengelola dan mencatat data operasional harian serta berkoordinasi dengan berbagai tim untuk memastikan kelancaran proses administrasi. 
+Pengalaman ini menjadi dasar dalam memahami permasalahan sistem manual dan mendorong pengembangan solusi berbasis web.
+</p>
+</div>
+
+<h2>Pendidikan</h2>
+<p>SMKN 1 Cianjur - Rekayasa Perangkat Lunak (2022)</p>
+
+</div>
+
+</body>
+</html>
